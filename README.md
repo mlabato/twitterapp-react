@@ -17,8 +17,8 @@ Additionally, Tailwindd.css for the styling and React-icons for the icons.
 
 ## Extra libraries
 - Tailwind CSS
-- React-Router-dom
-
+- React-Router v6
+- React icons
 
 ## Run this sample!
 - Run npm install
