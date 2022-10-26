@@ -12,6 +12,10 @@ Routing and navigation is carried out with React Router v6 and state handling (s
 
 Additionally, Tailwindd.css for the styling and React-icons for the icons.  
 
+<p align="center">
+  <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=562/uploads/users/317/posts/22192/image/streaming-intro-1_1.png" alt="image"/>
+</p>
+
 ## Framework
 - React
 
