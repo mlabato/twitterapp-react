@@ -9,15 +9,18 @@ const TweetsContainer = (props) => {
     setTopTenContainer(!topTenContainer);
   };
 
+  
+
   return (
-    <article className="flex flex-col  notebook:w-2/5   border-x-[1px] border-[#38444D]">
+    <article className={"flex flex-col notebook:w-2/5   border-x-[1px] border-[#38444D]" }>
+     
       {props.hasZeroTweets && (
-        <div className="text-white text-4xl mx-auto my-6 p-4">
+        <div className="text-white text-4xl mx-auto text-center my-6 p-4 h-screen">
           {props.username} has not tweeted yet
         </div>
       )}
       {props.isLockedAccount && (
-        <div className="text-white text-4xl mx-auto my-6 p-4">
+        <div className="text-white text-4xl mx-auto text-center my-6 p-4 h-screen">
           {props.username} has a locked account
         </div>
       )}
@@ -50,7 +53,7 @@ const TweetsContainer = (props) => {
 
       <div className="notebook:w-3/5 mx-[3rem] notebook:mx-auto w-[330px]">
         {props.topTenisLoading && (
-          <div className="p-4 mx-auto flex justify-center">
+          <div className="p-4 mx-auto h-screen flex justify-center">
             {" "}
             <Spinner />{" "}
           </div>

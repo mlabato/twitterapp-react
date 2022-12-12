@@ -7,6 +7,7 @@ import StatsContainer from "../layout/StatsContainer";
 import UserContainer from "../layout/UserContainer";
 import TweetsContainer from "../layout/TweetsContainer";
 import Statsbar from "../components/Statsbar";
+import Spinner from "../UI/Spinner";
 
 const Home = () => {
   const userCtx = useContext(UserContext);
@@ -87,20 +88,28 @@ const Home = () => {
   }, [userCtx, topTenUrl, statsUrl, userUrl]);
 
   return (
-    <section className="bg-[#15202B] ">
+    <section className="bg-[#15202B] h-full ">
       <Header />
 
       <article className="flex flex-col notebook:flex-row justify-center ">
         <StatsContainer dataIsLoading={dataIsLoading} />
 
         <div className="notebook:hidden mx-auto">
-          <div className=" w-1/2 font-bold text-center my-[1rem] mx-auto text-white  rounded-3xl  p-2 bg-[#273340] ">
-          @{userCtx.user.username} stats
+          <div className=" w-2/3 font-bold text-center my-[1rem] mx-auto text-white  rounded-3xl  p-2 bg-[#273340] ">
+            @{userCtx?.user?.username} stats
           </div>
-          <Statsbar />
+
+          {dataIsLoading ? (
+            <div className="p-4 mx-auto flex justify-center">
+              <Spinner />
+            </div>
+          ) : (
+            <Statsbar />
+          )}
         </div>
 
         <TweetsContainer
+          
           hasZeroTweets={hasZeroTweets}
           username={username}
           isLockedAccount={isLockedAccount}

@@ -32,21 +32,21 @@ const Statsbar = () => {
       : "";
 
   return (
-    <article className="flex flex-col my-[1rem] notebook:my-[2rem]">
+    <article className="flex flex-row notebook:flex-col my-[1rem] notebook:my-[2rem]">
       <StatsCard
         stat={totalTweets}
         comment={"w/o RT & replies"}
-        icon={<FaTwitter className="text-xl mx-4 hover:text-[#1C94E5]" />}
+        icon={<FaTwitter className="text-xl notebook:mx-4 hover:text-[#1C94E5]" />}
       />
       <StatsCard
         stat={totalRetweets}
         comment={"per tweet"}
-        icon={<FaRetweet className="text-xl mx-4 hover:text-[#1C94E5]" />}
+        icon={<FaRetweet className="text-xl  notebook:mx-4 hover:text-[#1C94E5]" />}
       />
       <StatsCard
         stat={totalFavs}
         comment={"per tweet"}
-        icon={<FaHeart className="text-xl mx-4 hover:text-[#1C94E5]" />}
+        icon={<FaHeart className="text-xl  notebook:mx-4 hover:text-[#1C94E5]" />}
       />
     </article>
   );
