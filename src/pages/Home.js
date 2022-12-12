@@ -20,9 +20,9 @@ const Home = () => {
   const id = localStorage.getItem("userId");
   const username = localStorage.getItem("username");
 
-  const topTenUrl = "https://mlabato-twitter-app.herokuapp.com/top-ten-rt/" + id;
-  const statsUrl = "https://mlabato-twitter-app.herokuapp.com/user-stats/" + id;
-  const userUrl = "https://mlabato-twitter-app.herokuapp.com/get-user-by-username/" + username;
+  const topTenUrl = "https://twitterapp-express.vercel.app/top-ten-rt/" + id;
+  const statsUrl = "https://twitterapp-express.vercel.app/user-stats/" + id;
+  const userUrl = "https://twitterapp-express.vercel.app/get-user-by-username/" + username;
 
   useEffect(() => {
     const fetchTopTenData = async () => {

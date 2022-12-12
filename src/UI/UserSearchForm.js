@@ -15,7 +15,7 @@ const UserSearchForm = (props) => {
     e.preventDefault();
 
     const username = usernameInputRef.current.value;
-    const url = "https://mlabato-twitter-app.herokuapp.com/get-user-by-username/" + username;
+    const url = "https://twitterapp-express.vercel.app/get-user-by-username/" + username;
 
     try {
       const response = await fetch(url);
