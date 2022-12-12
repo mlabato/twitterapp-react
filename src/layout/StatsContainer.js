@@ -3,7 +3,7 @@ import Statsbar from "../components/Statsbar"
 
 const StatsContainer = (props) =>{
         return(
-            <article className={"bg-[#15202B] " + props.dataIsLoading ? "h-screen" : ""}>
+            <article className={"bg-[#15202B] " + props.dataIsLoading ? "h-screen hidden notebook:block" : ""}>
             {props.dataIsLoading && (
               <div className="p-4 mx-auto">
                 {" "}

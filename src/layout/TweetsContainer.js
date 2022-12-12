@@ -10,7 +10,7 @@ const TweetsContainer = (props) => {
   };
 
   return (
-    <article className="flex flex-col   w-2/5   border-x-[1px] border-[#38444D]">
+    <article className="flex flex-col  notebook:w-2/5   border-x-[1px] border-[#38444D]">
       {props.hasZeroTweets && (
         <div className="text-white text-4xl mx-auto my-6 p-4">
           {props.username} has not tweeted yet
@@ -27,8 +27,8 @@ const TweetsContainer = (props) => {
           <button
             className={
               topTenContainer
-                ? "font-bold text-2xl text-white  rounded-3xl text-center p-2 bg-[#273340] "
-                : "font-bold text-2xl text-white  rounded-3xl text-center p-2"
+                ? "font-bold notebook:text-2xl text-white  rounded-3xl text-center p-2 bg-[#273340] "
+                : "font-bold notebook:text-2xl text-white  rounded-3xl text-center p-2"
             }
             onClick={topTenContainerHandler}
           >
@@ -38,8 +38,8 @@ const TweetsContainer = (props) => {
           <button
             className={
               !topTenContainer
-                ? "font-bold text-2xl text-white  rounded-3xl text-center p-2 bg-[#273340] "
-                : "font-bold text-2xl text-white  rounded-3xl text-center p-2"
+                ? "font-bold notebook:text-2xl text-white  rounded-3xl text-center p-2 bg-[#273340] "
+                : "font-bold notebook:text-2xl text-white  rounded-3xl text-center p-2"
             }
             onClick={topTenContainerHandler}
           >
@@ -48,7 +48,7 @@ const TweetsContainer = (props) => {
         </div>
       )}
 
-      <div className="w-3/5 mx-auto">
+      <div className="notebook:w-3/5 mx-[3rem] notebook:mx-auto w-[330px]">
         {props.topTenisLoading && (
           <div className="p-4 mx-auto flex justify-center">
             {" "}

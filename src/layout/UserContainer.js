@@ -3,7 +3,7 @@ import UserCard from "../components/UserCard";
 
 const UserContainer = (props) => {
   return (
-    <article className="my-8">
+    <article className="my-8 hidden notebook:block">
       {props.userDataisLoading && (
         <div className="p-4 mx-auto">
           {" "}

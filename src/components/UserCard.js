@@ -17,7 +17,7 @@ const UserCard = () => {
   }).format(userCtx.user.public_metrics.following_count);
 
   return (
-    <section className="p-4 h-full w-4/5  flex flex-col justify-start ">
+    <section className=" p-4 h-full  mx-[2rem] notebook:w-4/5  flex flex-col justify-center notebook:justify-start ">
       <UserSearchForm
         formClasses={"relative group"}
         inputClasses={

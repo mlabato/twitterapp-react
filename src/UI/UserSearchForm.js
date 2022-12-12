@@ -43,7 +43,7 @@ const UserSearchForm = (props) => {
 
   return (
     <form onSubmit={submitHandler} className={props.formClasses}>
-      {console.log(errorData)}
+      
       <label className={props.labelClasses}>{props.label}</label>
       <input
         className={props.inputClasses}

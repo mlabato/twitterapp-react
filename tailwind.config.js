@@ -11,6 +11,12 @@ module.exports = {
       animation: {
         'waving-hand': 'wave linear 600ms',
       },
+      screens: {
+        'mobile': '400px',
+        'notebook': '1024px',
+        'desktop': '1920px',
+        
+      }
     },
   },
   plugins: [],

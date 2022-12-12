@@ -6,6 +6,7 @@ import Header from "../layout/Header";
 import StatsContainer from "../layout/StatsContainer";
 import UserContainer from "../layout/UserContainer";
 import TweetsContainer from "../layout/TweetsContainer";
+import Statsbar from "../components/Statsbar";
 
 const Home = () => {
   const userCtx = useContext(UserContext);
@@ -22,7 +23,8 @@ const Home = () => {
 
   const topTenUrl = "https://twitterapp-express.vercel.app/top-ten-rt/" + id;
   const statsUrl = "https://twitterapp-express.vercel.app/user-stats/" + id;
-  const userUrl = "https://twitterapp-express.vercel.app/get-user-by-username/" + username;
+  const userUrl =
+    "https://twitterapp-express.vercel.app/get-user-by-username/" + username;
 
   useEffect(() => {
     const fetchTopTenData = async () => {
@@ -88,8 +90,15 @@ const Home = () => {
     <section className="bg-[#15202B] ">
       <Header />
 
-      <article className="flex flex-row justify-center ">
+      <article className="flex flex-col notebook:flex-row justify-center ">
         <StatsContainer dataIsLoading={dataIsLoading} />
+
+        <div className="notebook:hidden mx-auto">
+          <div className=" w-1/2 font-bold text-center my-[1rem] mx-auto text-white  rounded-3xl  p-2 bg-[#273340] ">
+          @{userCtx.user.username} stats
+          </div>
+          <Statsbar />
+        </div>
 
         <TweetsContainer
           hasZeroTweets={hasZeroTweets}

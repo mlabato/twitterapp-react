@@ -32,7 +32,7 @@ const Statsbar = () => {
       : "";
 
   return (
-    <article className="flex flex-col my-8">
+    <article className="flex flex-col my-[1rem] notebook:my-[2rem]">
       <StatsCard
         stat={totalTweets}
         comment={"w/o RT & replies"}

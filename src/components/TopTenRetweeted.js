@@ -6,7 +6,7 @@ const TopTenRetweeted = () => {
   const userCtx = useContext(UserContext);
 
   return (
-    <section>
+    <section >
       {userCtx.topTenRetweeted !== undefined && userCtx.user !== undefined
         ? userCtx.topTenRetweeted?.map((tweet) => {
             return (
