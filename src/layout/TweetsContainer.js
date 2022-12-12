@@ -12,7 +12,7 @@ const TweetsContainer = (props) => {
   
 
   return (
-    <article className={"flex flex-col notebook:w-2/5   border-x-[1px] border-[#38444D]" }>
+    <article className={"flex flex-col notebook:w-3/5   border-x-[1px] border-[#38444D]" }>
      
       {props.hasZeroTweets && (
         <div className="text-white text-4xl mx-auto text-center my-6 p-4 h-screen">

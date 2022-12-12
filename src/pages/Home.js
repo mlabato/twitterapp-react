@@ -91,7 +91,7 @@ const Home = () => {
     <section className="bg-[#15202B] h-full ">
       <Header />
 
-      <article className="flex flex-col notebook:flex-row justify-center ">
+      <article className="flex flex-col notebook:flex-row justify-center">
         <StatsContainer dataIsLoading={dataIsLoading} />
 
         <div className="notebook:hidden mx-auto">

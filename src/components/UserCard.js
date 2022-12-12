@@ -17,7 +17,7 @@ const UserCard = () => {
   }).format(userCtx?.user?.public_metrics?.following_count);
 
   return (
-    <section className=" p-4 h-full  mx-[2rem] notebook:w-4/5  flex flex-col justify-center notebook:justify-start ">
+    <section className=" p-4 h-full  mx-[2rem] notebook:w-3/5  flex flex-col justify-center notebook:justify-start ">
       <UserSearchForm
         formClasses={"relative group"}
         inputClasses={
@@ -32,7 +32,7 @@ const UserCard = () => {
 
       <article className="flex flex-col      bg-[#273340] rounded-3xl p-4  mt-[4rem] relative ">
         <img
-          className=" w-1/5 rounded-full absolute -top-7  border-[#273340] border-4 "
+          className=" w-[5rem] rounded-full absolute  -top-[2rem]  border-[#273340] border-4 "
           src={userCtx?.user?.profile_image_url}
           alt=""
         />
