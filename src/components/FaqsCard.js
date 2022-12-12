@@ -24,11 +24,11 @@ const FaqsCard = () => {
 
       <div className="flex flex-row text-white font-semibold    my-2 items-center justify-between px-4 py-2 hover:bg-slate-400">
         <div className="flex flex-col">
-          BE Repository <p className="text-sm text-gray-500">@github</p>
+          Backend Repository <p className="text-sm text-gray-500">@github</p>
         </div>
         <button className="p-1 bg-white text-[#273340] text-sm rounded-3xl mx-4 font-bold">
           <a
-            href="https://www.linkedin.com/in/luismartinlab/"
+            href="https://github.com/mlabato/twitterapp-express/"
             alt=""
             className="mx-4"
           >
@@ -39,11 +39,26 @@ const FaqsCard = () => {
 
       <div className="flex flex-row text-white font-semibold    my-2 items-center px-4 py-2 justify-between hover:bg-slate-400">
         <div className="flex flex-col">
-          BE Repository <p className="text-sm text-gray-500">@github</p>
+          Frontend Repository <p className="text-sm text-gray-500">@github</p>
         </div>
         <button className="p-1 bg-white text-[#273340] text-sm rounded-3xl mx-4 font-bold">
           <a
-            href="https://www.linkedin.com/in/luismartinlab/"
+            href="https://github.com/mlabato/twitterapp-react"
+            alt=""
+            className="mx-4"
+          >
+            Visit
+          </a>
+        </button>
+      </div>
+
+      <div className="flex flex-row text-white font-semibold    my-2 items-center px-4 py-2 justify-between hover:bg-slate-400">
+        <div className="flex flex-col">
+          Personal portfolio<p className="text-sm text-gray-500">@Vercel</p>
+        </div>
+        <button className="p-1 bg-white text-[#273340] text-sm rounded-3xl mx-4 font-bold">
+          <a
+            href="https://portfolio-mlabato.vercel.app/"
             alt=""
             className="mx-4"
           >

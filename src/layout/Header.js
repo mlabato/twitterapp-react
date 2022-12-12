@@ -31,7 +31,7 @@ const Header = () => {
           >
             Twitter API
           </a>{" "}
-          by @mlabato{" "}
+           <a href="https://portfolio-mlabato.vercel.app/" className="cursor-pointer hover:text-[#1C94E5]">by @mlabato{" "}</a>
           <a
             href="https://github.com/mlabato"
             alt=""
