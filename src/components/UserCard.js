@@ -21,7 +21,7 @@ const UserCard = () => {
       <UserSearchForm
         formClasses={"relative group"}
         inputClasses={
-          "p-2 bg-[#273340] rounded-3xl w-full focus:bg-[#15202B]  focus:border-[1px]  focus:border-[#1C94E5]"
+          "p-2 bg-[#273340] text-white rounded-3xl w-full focus:bg-[#15202B]  focus:border-[1px]  focus:border-[#1C94E5]"
         }
         buttonClasses={" absolute top-3 right-6"}
         buttonText={
