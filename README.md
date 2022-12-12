@@ -30,4 +30,4 @@ Additionally, Tailwindd.css for the styling and React-icons for the icons.
 - Run npm start
 
 The app was deployed using Vercel and can be found in the following link:  
-https://twitter-app-react.vercel.app/
+https://mlabato-twitterapp.vercel.app/
